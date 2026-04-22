@@ -32,6 +32,7 @@
                     <a href="#services" class="nav-link text-gray-300 hover:text-white font-medium transition-colors">خدماتنا</a>
                     <a href="#portfolio" class="nav-link text-gray-300 hover:text-white font-medium transition-colors">أعمالنا</a>
                     <a href="#achievements" class="nav-link text-gray-300 hover:text-white font-medium transition-colors">إنجازاتنا</a>
+                    <a href="#customers" class="nav-link text-gray-300 hover:text-white font-medium transition-colors">عملاؤنا</a>
                     <a href="#contact" class="nav-link text-gray-300 hover:text-white font-medium transition-colors">تواصل معنا</a>
                 </div>
 
@@ -65,6 +66,7 @@
                 <a href="#services" class="text-gray-300 hover:text-white font-medium py-2">خدماتنا</a>
                 <a href="#portfolio" class="text-gray-300 hover:text-white font-medium py-2">أعمالنا</a>
                 <a href="#achievements" class="text-gray-300 hover:text-white font-medium py-2">إنجازاتنا</a>
+                <a href="#customers" class="text-gray-300 hover:text-white font-medium py-2">عملاؤنا</a>
                 <a href="#contact" class="gradient-primary text-white px-5 py-2 rounded-full font-bold text-center">تواصل معنا</a>
             </div>
         </div>
@@ -539,6 +541,54 @@
         </div>
     </section>
 
+    {{-- ===== CUSTOMERS SECTION ===== --}}
+    <section id="customers" class="py-20 bg-[#0f0a1e]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <span class="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-3 block">عملاؤنا</span>
+                <h2 class="text-3xl sm:text-4xl lg:text-5xl font-black text-white mb-4">
+                    ثقة <span class="text-gradient">عملائنا</span> تلهمنا
+                </h2>
+                <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                    شركاء النجاح الذين وثقوا بوكالة المشرفي لبناء علامتهم التجارية
+                </p>
+            </div>
+
+            {{-- Row 1: 3 logos --}}
+            <div class="flex flex-wrap justify-center gap-8 mb-8">
+                @foreach([
+                    ['ejra',    'EJRA — Collection Debit'],
+                    ['mourid',  'مورد'],
+                    ['khulasa', 'خلاصة'],
+                ] as [$slug, $name])
+                <div class="card-hover flex flex-col items-center gap-4 group">
+                    <div class="w-36 h-36 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-purple-500/50 transition-colors shadow-lg shadow-black/40">
+                        <img src="{{ asset('images/customers/' . $slug . '.png') }}" alt="{{ $name }}"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-gray-400 text-sm font-medium group-hover:text-white transition-colors">{{ $name }}</span>
+                </div>
+                @endforeach
+            </div>
+
+            {{-- Row 2: 2 logos --}}
+            <div class="flex flex-wrap justify-center gap-8">
+                @foreach([
+                    ['othaim', 'العثيم'],
+                    ['ratio',  'ريشيو — Specialty Coffee'],
+                ] as [$slug, $name])
+                <div class="card-hover flex flex-col items-center gap-4 group">
+                    <div class="w-36 h-36 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-purple-500/50 transition-colors shadow-lg shadow-black/40">
+                        <img src="{{ asset('images/customers/' . $slug . '.png') }}" alt="{{ $name }}"
+                             class="w-full h-full object-cover">
+                    </div>
+                    <span class="text-gray-400 text-sm font-medium group-hover:text-white transition-colors">{{ $name }}</span>
+                </div>
+                @endforeach
+            </div>
+        </div>
+    </section>
+
     {{-- ===== CONTACT SECTION ===== --}}
     <section id="contact" class="py-20 bg-[#0f0a1e]">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -690,7 +740,7 @@
                 <div>
                     <h4 class="text-white font-bold mb-4">روابط سريعة</h4>
                     <ul class="space-y-2">
-                        @foreach([['#home', 'الرئيسية'], ['#about', 'من نحن'], ['#services', 'خدماتنا'], ['#portfolio', 'أعمالنا'], ['#achievements', 'إنجازاتنا'], ['#contact', 'تواصل معنا']] as [$href, $label])
+                        @foreach([['#home', 'الرئيسية'], ['#about', 'من نحن'], ['#services', 'خدماتنا'], ['#portfolio', 'أعمالنا'], ['#achievements', 'إنجازاتنا'], ['#customers', 'عملاؤنا'], ['#contact', 'تواصل معنا']] as [$href, $label])
                         <li><a href="{{ $href }}" class="text-gray-400 hover:text-white text-sm transition-colors">{{ $label }}</a></li>
                         @endforeach
                     </ul>
