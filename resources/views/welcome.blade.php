@@ -3,14 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="وكالة المشرفي للتسويق - وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي">
-    <title>وكالة المشرفي للتسويق</title>
+    <meta name="description" content="وكالة المشرافي للتسويق - وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي">
+    <title>وكالة المشرافي للتسويق</title>
 
     <!-- Google Fonts - Cairo for Arabic -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
+    <link rel="icon" type="image/png" href="{{ asset('milaf.png') }}">
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="bg-[#0f0a1e] text-white antialiased">
@@ -22,7 +23,7 @@
 
                 {{-- Logo --}}
                 <a href="#" class="flex items-center">
-                    <img src="{{ asset('milaf.png') }}" alt="وكالة المشرفي للتسويق" class="h-14 w-auto object-contain">
+                    <img src="{{ asset('milaf.png') }}" alt="وكالة المشرافي للتسويق" class="h-14 w-auto object-contain">
                 </a>
 
                 {{-- Desktop Menu --}}
@@ -99,7 +100,7 @@
                     </h1>
 
                     <p class="text-gray-300 text-lg leading-relaxed mb-8 max-w-lg mx-auto lg:mx-0">
-                        وكالة المشرفي للتسويق — وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي. نعمل بشغف لصناعة حضور قوي للعلامات التجارية.
+                        وكالة المشرافي للتسويق — وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي. نعمل بشغف لصناعة حضور قوي للعلامات التجارية.
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
@@ -138,10 +139,10 @@
                     <div class="relative w-full max-w-lg">
                         <div class="gradient-card border border-purple-700/40 rounded-3xl p-8 backdrop-blur-sm shadow-2xl shadow-purple-900/50">
                             <div class="flex items-center justify-center mb-6">
-                                <img src="{{ asset('milaf.png') }}" alt="وكالة المشرفي للتسويق" class="h-24 w-auto object-contain">
+                                <img src="{{ asset('milaf.png') }}" alt="وكالة المشرافي للتسويق" class="h-24 w-auto object-contain">
                             </div>
                             <div class="text-center mb-6">
-                                <h3 class="text-white font-black text-xl">وكالة المشرفي للتسويق</h3>
+                                <h3 class="text-white font-black text-xl">وكالة المشرافي للتسويق</h3>
                                 <p class="text-gray-400 text-sm mt-1">حلول ذكية وعصرية في التسويق الرقمي</p>
                             </div>
                             <div class="grid grid-cols-3 gap-3">
@@ -198,7 +199,7 @@
                 <div>
                     <span class="text-amber-400 font-semibold text-sm uppercase tracking-widest mb-3 block">من نحن</span>
                     <h2 class="text-3xl sm:text-4xl font-black text-white mb-6">
-                        وكالة المشرفي <span class="text-gradient">للتسويق</span>
+                        وكالة المشرافي <span class="text-gradient">للتسويق</span>
                     </h2>
                     <p class="text-gray-300 text-lg leading-relaxed mb-6">
                         وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي. نعمل بشغف لصناعة حضور قوي للعلامات التجارية للعملاء عبر بناء استراتيجيات دقيقة، إدارة الهوية البصرية، وإطلاق حملات مؤثرة تحقق النتائج.
@@ -393,7 +394,7 @@
             {{-- Why Us --}}
             <div class="mt-12 gradient-card border border-purple-700/30 rounded-3xl p-8">
                 <div class="text-center mb-6">
-                    <h3 class="text-white font-black text-2xl">لماذا <span class="text-gradient">وكالة المشرفي؟</span></h3>
+                    <h3 class="text-white font-black text-2xl">لماذا <span class="text-gradient">وكالة المشرافي؟</span></h3>
                 </div>
                 <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
                     @foreach([
@@ -550,7 +551,7 @@
                     ثقة <span class="text-gradient">عملائنا</span> تلهمنا
                 </h2>
                 <p class="text-gray-400 text-lg max-w-2xl mx-auto">
-                    شركاء النجاح الذين وثقوا بوكالة المشرفي لبناء علامتهم التجارية
+                    شركاء النجاح الذين وثقوا بوكالة المشرافي لبناء علامتهم التجارية
                 </p>
             </div>
 
@@ -607,7 +608,7 @@
                 <div class="space-y-5">
                     <div class="gradient-card border border-purple-700/30 rounded-2xl p-7">
                         <div class="flex items-center justify-center mb-6">
-                            <img src="{{ asset('milaf.png') }}" alt="وكالة المشرفي للتسويق" class="h-20 w-auto object-contain">
+                            <img src="{{ asset('milaf.png') }}" alt="وكالة المشرافي للتسويق" class="h-20 w-auto object-contain">
                         </div>
                         <h3 class="text-white font-bold text-xl mb-6 text-center">معلومات التواصل</h3>
                         <div class="space-y-4">
@@ -728,7 +729,7 @@
                 {{-- Brand --}}
                 <div>
                     <div class="mb-4">
-                        <img src="{{ asset('milaf.png') }}" alt="وكالة المشرفي للتسويق" class="h-16 w-auto object-contain">
+                        <img src="{{ asset('milaf.png') }}" alt="وكالة المشرافي للتسويق" class="h-16 w-auto object-contain">
                     </div>
                     <p class="text-gray-400 leading-relaxed mb-4 text-sm">
                         وكالة تسويق احترافية تقدم حلولاً ذكية وعصرية في عالم التسويق الرقمي. نضع العميل في قلب كل مشروع.
@@ -767,7 +768,7 @@
             </div>
 
             <div class="border-t border-purple-900/30 pt-6 flex flex-col md:flex-row items-center justify-between gap-4">
-                <p class="text-gray-500 text-sm">© {{ date('Y') }} وكالة المشرفي للتسويق. جميع الحقوق محفوظة.</p>
+                <p class="text-gray-500 text-sm">© {{ date('Y') }} وكالة المشرافي للتسويق. جميع الحقوق محفوظة.</p>
                 <p class="text-gray-600 text-sm">صُنع بـ ❤️ في الرياض، المملكة العربية السعودية</p>
             </div>
         </div>
