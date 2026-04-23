@@ -558,9 +558,9 @@
             {{-- Row 1: 3 logos --}}
             <div class="flex flex-wrap justify-center gap-8 mb-8">
                 @foreach([
-                    ['ejra',    'EJRA — Collection Debit'],
-                    ['mourid',  'مورد'],
-                    ['khulasa', 'خلاصة'],
+                    ['ejra',''],
+                    ['mourid',''],
+                    ['khulasa',''],
                 ] as [$slug, $name])
                 <div class="card-hover flex flex-col items-center gap-4 group">
                     <div class="w-36 h-36 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-purple-500/50 transition-colors shadow-lg shadow-black/40">
@@ -575,8 +575,8 @@
             {{-- Row 2: 2 logos --}}
             <div class="flex flex-wrap justify-center gap-8">
                 @foreach([
-                    ['othaim', 'العثيم'],
-                    ['ratio',  'ريشيو — Specialty Coffee'],
+                    ['othaim',''],
+                    ['ratio',''],
                 ] as [$slug, $name])
                 <div class="card-hover flex flex-col items-center gap-4 group">
                     <div class="w-36 h-36 rounded-full overflow-hidden border-2 border-white/10 group-hover:border-purple-500/50 transition-colors shadow-lg shadow-black/40">
